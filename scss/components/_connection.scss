@@ -1,0 +1,38 @@
+.connect{
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        @include flex($content: space-between);
+    }
+}
+
+.connect__number {
+    display: inline-block;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: calc(30 / 30);
+  color: $accent-color;
+
+padding: 19px 28px;
+
+    background-color: #F1E4FF;
+
+    border-radius: 50%;
+
+    margin-top: 47px;
+    margin-bottom: 16px;
+}
+
+.connect__title{
+    font-weight: 700;
+        font-size: 18px;
+        line-height: calc(28 / 18);
+        margin-bottom: 4px;
+}
+
+.connect__text{
+    font-weight: 400;
+        font-size: 14px;
+        line-height: calc(22 / 14);
+        margin-bottom: 40px;
+}

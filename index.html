@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telegram Chat</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="section bg">
+      <nav class="conteiner nav">
+        <div class="burger">
+          <a class="nav__link">
+            <img width="39" height="30" src="./img/logo.svg" />
+            <span class="nav__name">tocha</span>
+          </a>
+          <button
+            class="nav__btn"
+            type="button"
+            data-menu-button
+            aria-expanded="false"
+          >
+            <svg width="28" height="28">
+              <use href="./img/icon.svg#burger" class="burger__open"></use>
+              <use href="./img/icon.svg#close" class="burger__close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="burger__menu" data-menu>
+          <ul class="list nav__list">
+            <li class="nav__item"><a class="nav__link">Подключение</a></li>
+            <li class="nav__item"><a class="nav__link">Оплата</a></li>
+            <li class="nav__item"><a class="nav__link">Контакты</a></li>
+            <li class="nav__item"><a class="nav__link">Выход</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- HERO -->
+      <section class="section">
+        <div class="conteiner hero">
+          <div class="hero__text">
+            <h1 class="section__title">
+              <span class="section__title--accent">Telegram чат</span><br />
+              на вашем сайте
+            </h1>
+            <p class="hero__desc">
+              Общение с клиентами станет простым и удобным, а подключение займет
+              5 минут.<br />Первый месяц —
+              <span class="hero__desc--accent">бесплатно</span>!
+            </p>
+            <button class="btn hero__btn" type="button">Подключить</button>
+          </div>
+
+          <div>
+            <img
+              srcset="
+                ./img/hero375.png      330w,
+                ./img/hero375-2x.png   660w,
+                ./img/hero768.png      420w,
+                ./img/hero768-2x.png   840w,
+                ./img/hero1110.png     725w,
+                ./img/hero1110-2x.png 1450w
+              "
+              src="./img/hero375.png"
+              sizes="(min-width: 1110px) 725px,
+          (min-width: 768px) 420px, 330px"
+            />
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- BENEFITS -->
+      <section class="section section__padding">
+        <div class="conteiner section-benefits">
+          <div class="benefits__desc">
+            <h2 class="section__title">Tocha Online — это</h2>
+            <ul class="list benefits">
+              <li class="benefits__item">
+                <div>
+                  <svg width="42" height="42">
+                    <use href="./img/icon.svg#icon1"></use>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="benefits__title">Ничего лишнего</h3>
+                  <p class="benefits__text">
+                    Отсутствие лишних приложений для операторов. Оператору не
+                    нужно учиться работать с чатом
+                  </p>
+                </div>
+              </li>
+              <li class="benefits__item">
+                <div>
+                  <svg width="42" height="42">
+                    <use href="./img/icon.svg#icon2"></use>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="benefits__title">Простота</h3>
+                  <p class="benefits__text">Простая установка на сайт</p>
+                </div>
+              </li>
+              <li class="benefits__item">
+                <div>
+                  <svg width="42" height="42">
+                    <use href="./img/icon.svg#icon3"></use>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="benefits__title">Несколько ассистентов</h3>
+                  <p class="benefits__text">
+                    Возможность подключения нескольких ассистентов
+                  </p>
+                </div>
+              </li>
+              <li class="benefits__item">
+                <div>
+                  <svg width="42" height="42">
+                    <use href="./img/icon.svg#icon4"></use>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="benefits__title">Кастомизация</h3>
+                  <p class="benefits__text">
+                    Настройка интерфейса под нужды сайта
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <img
+              srcset="
+                ./img/phone375.png     300w,
+                ./img/phone375-2x.png  600w,
+                ./img/phone1110.png    411w,
+                ./img/phone1110-2x.png 822w
+              "
+              src="./img/phone375.png"
+              alt=""
+              sizes="(min-width: 1110) 411px, 300px"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- TARIFFS -->
+      <section class="section__padding">
+        <div class="conteiner">
+          <h2 class="section__title section__title--center">Тарифы</h2>
+          <p class="tariffs__text">Стоимость зависит от трафика сайта</p>
+          <ul class="list tariffs">
+            <li class="tariffs__item">
+              <h3 class="tariffs__title">Бесплатно</h3>
+              <p class="tariffs__desc">Пробный период<br />на 1 месяц</p>
+              <span class="tariffs__price">0₽/первый месяц</span>
+              <button class="btn tariffs__btn" type="button">
+                Подключить за 0₽
+              </button>
+            </li>
+            <li class="tariffs__item">
+              <h3 class="tariffs__title">Базовый</h3>
+              <p class="tariffs__desc">Менее 1000<br />посещений в сутки</p>
+              <span class="tariffs__price">200₽/месяц</span>
+              <button class="btn tariffs__btn" type="button">
+                Подключить за 200₽
+              </button>
+            </li>
+            <li class="tariffs__item">
+              <h3 class="tariffs__title">Премиум</h3>
+              <p class="tariffs__desc">Более 1000<br />посещений в сутки</p>
+              <span class="tariffs__price">500₽/месяц</span>
+              <button class="btn tariffs__btn" type="button">
+                Подключить за 500₽
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- CONNECTION -->
+      <section>
+        <div class="conteiner">
+          <h2 class="section__title section__title--center">
+            Всего 3 шага для подключения Telegram чата
+          </h2>
+          <ul class="list connect">
+            <li>
+              <span class="connect__number">1</span>
+              <h3 class="connect__title">Telegram bot</h3>
+              <p class="connect__text">
+                Вы создаёте Telegram бота<br />для вашего сайта
+              </p>
+              <img
+                srcset="./img/apple1-375.png 211w, 
+                ./img/apple1-375-2x.png 422w,
+                ./img/apple1-1110.png 232ww, 
+                ./img/apple1-1110-2x.png 464w"
+                src="./img/apple1-375.png"
+                alt=""
+                sizes="
+                (min-width:1110px) 232px, 211px
+                "
+              />
+            </li>
+            <li>
+              <span class="connect__number">2</span>
+              <h3 class="connect__title">Подключение Tocha</h3>
+              <p class="connect__text">
+                Tocha подключает Telegram бота<br />к вашиму сайту
+              </p>
+              <img
+                srcset="./img/apple2-375.png 211w, 
+                ./img/apple2-375-2x.png 422w,
+                ./img/apple2-1110.png 232ww, 
+                ./img/apple2-1110-2x.png 464w"
+                src="./img/apple2-375.png"
+                alt=""
+                sizes="
+                (min-width:1110px) 232px, 211px
+                "
+              />
+            </li>
+            <li>
+              <span class="connect__number">3</span>
+              <h3 class="connect__title">Telegram-чат</h3>
+              <p class="connect__text">
+                Консультант отвечает на вопросы<br />посетителей сайта
+              </p>
+              <img
+                srcset="./img/apple3-375.png 211w, 
+                ./img/apple3-375-2x.png 422w,
+                ./img/apple3-1110.png 232ww, 
+                ./img/apple3-1110-2x.png 464w"
+                src="./img/apple3-375.png"
+                alt=""
+                sizes="
+                (min-width:1110px) 232px, 211px
+                "
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- E-MAIL -->
+      <section class="section__padding">
+        <div class="conteiner">
+          <div class="email">
+            <img
+              srcset="
+                ./img/email375.png     269w,
+                ./img/email375-2x.png  538w,
+                ./img/email1110.png    314w,
+                ./img/email1110-2x.png 628w
+              "
+              src="./img/email375.png"
+              alt=""
+              sizes="(min-width: 1110px) 314px, 269px"
+            />
+            <h2 class="email__title">
+              Подключите Telegram<br />чат уже сегодня
+            </h2>
+            <form class="form">
+              <input
+                class="form__input"
+                type="email"
+                name="email"
+                placeholder="Введите e-mail"
+              />
+              <button class="form__btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section__padding">
+      <div class="conteiner footer__conteiner">
+        <div>
+          <a class="footer__logo" href="">
+            <img width="39" height="30" src="./img/logo.svg" />
+            <span class="footer__name">tocha</span>
+          </a>
+        </div>
+        <div class="footer__list">
+          <div>
+            <h2 class="footer__title">Telegram чат</h2>
+            <ul class="list">
+              <li class="footer__item">
+                <a class="footer__link" href="">О нас</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Партнеры</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Инструкция</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Цены</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="footer__title footer__title--margin">Поддержка</h2>
+            <ul class="list">
+              <li class="footer__item">
+                <a class="footer__link" href="">Центр поддержки</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href=""
+                  >Политика<br />конфеденциальности</a
+                >
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Документы оферта</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Документы оферта</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Статус</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/menu.js"></script>
+</html>
