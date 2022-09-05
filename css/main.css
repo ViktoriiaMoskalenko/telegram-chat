@@ -273,6 +273,12 @@ body {
 
 .benefits {
   margin: 40px 0 24px 0;
+  max-width: 325px;
+}
+@media screen and (min-width: 768px) {
+  .benefits {
+    width: 388px;
+  }
 }
 
 .benefits__item {
